@@ -1,6 +1,7 @@
 /* efeitos de header*/
 
 .navBar {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     position: fixed;
     display: flex;
     align-items: center;
@@ -25,8 +26,13 @@
 
 .lista a {
     margin: 4px;
+    padding: 4px;
+    border-radius: 5px;
     text-decoration: none;
     color: white;
+}
+.lista a:hover {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.61),rgb(241, 67, 233), rgb(210, 0, 252));
 }
 
 .menu {

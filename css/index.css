@@ -20,7 +20,7 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -55%);
     width: 70%;
     height: 80%;
 }
@@ -43,21 +43,24 @@ main {
 
 .btn_menu {
     display: flex;
+    align-items: center;
+    justify-content: space-around;
     position: absolute;
     bottom: 20px;
     left: 50%;
     transform: translate(-50%);
     z-index: 2;
     gap: 10px;
-    width: 100px;
-    height: 15px;
+    width: 250px;
+    height: 20px;
 }
 
 .btn {
     background-image: linear-gradient(to bottom, rgb(114, 112, 112), black);
     border: 1px solid white;
+    padding: 3px;
     border-radius: 5px;
-    width: 20px;
+    width: 40px;
     height: 10px;
     cursor: pointer;
 }
@@ -128,53 +131,42 @@ main {
     margin: 0;
 }
 
-
-
-@media(max-height:500px) {
-    .navBar {  
-    top: 5px;
-    left: 0;
-    width: 100%;
-    height: 60px;
-    background-color: rgb(0, 0, 0);
-    margin-top: 10px;
-    z-index: 2;
+@media (max-width:700px) {
+    .slider {
+        width: 320px;
+        height: 200px;
     }
-    .logo img {
-        width: 50px;
+
+    .imagem {
+        width: 320px;
+        height: 200px;
     }
-  
-    .lista {
-      display: none;
+    .imagem img {
+        width: 320px;
+        height: 240px;
+    }
+
+    .somos {
+        display: none;
+    }
+
+    .ativo1~.imagem {
+        margin-left: 0;
+        transition: 1s;
     }
     
-    .menu{
-      display: flex;
-    }
-  }
-  
-  @media(max-width:1000px){
-    .slide {
-      width: 750px;}
-  }
-  
-  @media(max-width:850px){
-  
-    .lista {
-      display: none;
+    .ativo2~.imagem {
+        margin-left: -320px;
+        transition: 1s;
     }
     
-    .menu{
-      display: flex;
-      align-items: start;
+    .ativo3~.imagem {
+        margin-left: -640px;
+        transition: 1s;
     }
-  }
-  
-  @media(max-width:450px) {
-  
-    h3 {
-      font-size: 13px;
-      width: 100px;
-      margin-right: 5px;
+    
+    .ativo4~.imagem {
+        margin-left: -960px;
+        transition: 1s;
     }
 }
