@@ -224,13 +224,13 @@ main {
 
     }
 
-    .somos h1, .somos h2{
+    .somos h1, .somos h4{
         display: flex;
         font-size: 50px;
         margin-left: 10px;
     }
 
-    h2 {
+    h4 {
         margin-left: 12px;
         font-weight: bold;
     }
