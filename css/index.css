@@ -249,7 +249,7 @@ main {
         z-index: 5;
     }
 
-    .sobre h2,.sobre h1 {
+    .sobre h2,.sobre h4 {
         display: none;
         transition: 1s;
     }
