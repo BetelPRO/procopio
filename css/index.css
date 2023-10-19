@@ -56,7 +56,7 @@ main {
 }
 
 .btn {
-    background-image: linear-gradient(to bottom, rgb(114, 112, 112), black);
+    background-image: linear-gradient(to bottom, rgba(114, 112, 112, 0.664), rgba(0, 0, 0, 0.664));
     border: 1px solid white;
     padding: 3px;
     border-radius: 5px;
@@ -132,6 +132,19 @@ main {
 }
 
 @media (max-width:700px) {
+    main {
+        width: 95%;
+    }
+
+    .btn_menu {
+        bottom: 10px;
+        height: 10px;
+    }
+
+    .btn {
+        height: 8px;
+        background-image: linear-gradient(to bottom, rgba(114, 112, 112, 0.548), rgba(0, 0, 0, 0.479));
+    }
     .slider {
         width: 320px;
         height: 200px;
@@ -147,7 +160,28 @@ main {
     }
 
     .somos {
-        display: none;
+        background-color: aliceblue;
+        margin: 0;
+        border: 1px solid rgba(0, 0, 0, 0.705);
+        border-radius: 80px;
+        width: 90%;
+        height: 100px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        bottom: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .somos img {
+        width: 70px;
+    }
+
+    .somos p {
+        max-height: 90px;
+        margin: 0;
+
     }
 
     .ativo1~.imagem {
