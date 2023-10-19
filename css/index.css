@@ -227,13 +227,13 @@ main {
     .somos h2{
         display: flex;
         font-size: 40px;
-        margin-left: 10px;
     }
 
     .somos h4{
         font-size: 30px;
         display: flex;
         margin-left: 10px;
+        margin-right: 2px;
     }
 
     h4 {
