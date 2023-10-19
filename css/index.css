@@ -126,10 +126,14 @@ main {
     width: 120px;
     margin-right: 1rem;
 }
+.somos p {
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
 .navBot{
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,7 +141,12 @@ main {
     height: 2rem;
     color: white;
     background-color: black;
-  }
+}
+
+.navBot p { 
+    margin: 0;
+}
+
 .navBar nav p {
     margin: 0;
 }
@@ -145,6 +154,10 @@ main {
 @media (max-width:700px) {
     main {
         width: 95%;
+    }
+
+    .navBot p { 
+        font-size: 10px;
     }
 
     .romano {
@@ -161,6 +174,7 @@ main {
         height: 8px;
         background-image: linear-gradient(to bottom, rgba(114, 112, 112, 0.548), rgba(0, 0, 0, 0.479));
     }
+
     .slider {
         width: 320px;
         height: 200px;
@@ -180,8 +194,8 @@ main {
         margin: 0;
         border: 1px solid rgba(0, 0, 0, 0.705);
         border-radius: 80px;
-        width: 90%;
-        height: 100px;
+        width: 75%;
+        height: 70px;
         position: absolute;
         left: 50%;
         transform: translate(-50%);
@@ -191,13 +205,50 @@ main {
     }
 
     .somos img {
+        position: absolute;
         width: 70px;
+        left: 70%;
     }
 
-    .somos p {
+    .somos #nós {
+        display: none;
         max-height: 90px;
         margin: 0;
 
+    }
+
+    .somos h1 {
+        font-size: 50px;
+        margin-left: 10px;
+    }
+
+    h2 {
+        margin-left: 12px;
+        font-weight: bold;
+        font-size: 32px;
+    }
+
+    .sobre img {
+        position: absolute;
+        width: 85px;
+        left: 3%;
+        transition: 1s;
+        z-index: 5;
+    }
+
+    .sobre h2,.sobre h1 {
+        display: none;
+        transition: 1s;
+    }
+
+    .sobre #nós {
+        display: flex;
+        position: absolute;
+        right: 12px;
+        left: 100px;
+        bottom: 16px;
+        text-align: center;
+        transition: 1s;
     }
 
     .ativo1~.imagem {

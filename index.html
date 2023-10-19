@@ -6,6 +6,7 @@
     <title>Procopio's Açaí</title>
     <script src="js/slide.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/sobre.js"></script>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/navbar.css">
 </head>
@@ -15,6 +16,7 @@
         <header>
             <div class="navBar">
                 <nav>
+                    <img class="exit" id="exit" src="imagens/esc.png" onclick="exit()" alt="exit menu">
                     <ul class="lista">
                         <li><a href="/">Início</a></li>
                         <li><a href="/">Fazer Pedido</a></li>
@@ -29,6 +31,7 @@
                         <div id="men3"></div>
                     </div>
                 </div>
+
                 <div class="logo">
                     <h3>Procópios Açaí</h3>
                     <img src="imagens/logo.png" alt="logo Procópio's Açaí">
@@ -56,18 +59,22 @@
                     </div>
                 </div>
             </div>
-            <div class="somos">
-                <img src="imagens/logo.png" alt="familia">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod maxime placeat illo laborum earum tempore neque, quisquam omnis maiores, excepturi quos modi culpa temporibus at ipsa, voluptate vel quaerat ea?</p>
+            <div class="somos" id="somos">
+                <h2>Sobre nós</h2>
+                <h1>&#10157</h1>
+                <img id="familia" onclick="sobre()" src="imagens/logo.png" alt="familia">
+                <div id="nós">
+                    <p>"A Procópio's Açaí nasceu da vontade de empreender em unidade e em família."</p>
+                </div>
             </div>
         </main>
         <footer>
         </footer>
-        <footer class='navBot'>
-            <nav>
-                <p id='copy'>© Copyright 2023 Procópio's Açaí - All Rights Reserved</p>
-            </nav>
-          </footer>
     </div>
+    <footer class='navBot'>
+        <nav>
+            <p id='copy'>© Copyright 2023 Procópio's Açaí - All Rights Reserved</p>
+        </nav>
+      </footer>
 </body>
 </html>

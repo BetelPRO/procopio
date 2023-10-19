@@ -31,8 +31,9 @@
     text-decoration: none;
     color: white;
 }
+
 .lista a:hover {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.61),rgb(241, 67, 233), rgb(210, 0, 252));
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.61), rgb(241, 67, 233), rgb(210, 0, 252));
 }
 
 .menu {
@@ -43,6 +44,19 @@
     height: 27px;
     margin-left: 40px;
     cursor: pointer;
+}
+
+.exit{
+    position: fixed;
+    width: 40px;
+    top: 40px;
+    left: 18px;
+    display: none;
+    z-index: 5;
+}
+
+.exit.Off {
+    display: flex;
 }
 
 #men1 {
@@ -90,6 +104,10 @@
     display: none;
 }
 
+.menuAtivo #menu img {
+    display: flex;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -119,8 +137,29 @@
 @media (max-width: 700px) {
     .menuAtivo {
         display: flex;
+        margin-top: 300px;
         border-radius: 0px 20px;
         background-image: linear-gradient(to right, white, rgba(255, 255, 255, 0.76));
+    }
+
+    .exit.Off~.lista {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        width: 100%;
+        font-size: x-large;
+        margin-top: 80px;
+        z-index: 5;
+    }
+
+    .exit.Off~.lista a {
+        color: black;
+        background-color: aqua;
+        z-index: 5;
+    }
+
+    .menuAtivo~.menu {
+        display: none;
     }
 
     .lista {
@@ -131,12 +170,12 @@
         align-items: center;
         justify-content: space-between;
     }
+
     .menu {
         display: flex;
         position: absolute;
         bottom: 45%;
         left: 0;
-        
         transform: translate(-50%, 50%);
     }
 
@@ -149,6 +188,4 @@
     }
 }
 
-@media (max-height:950px) {
-
-}
+@media (max-height:950px) {}
