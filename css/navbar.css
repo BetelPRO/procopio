@@ -53,6 +53,7 @@
     left: 18px;
     display: none;
     z-index: 5;
+    cursor: pointer;
 }
 
 .exit.Off {
@@ -142,6 +143,48 @@
         background-image: linear-gradient(to right, white, rgba(255, 255, 255, 0.76));
     }
 
+    #inicio {
+        left: 40px;
+        position: absolute;
+        width: 50%;
+    }
+
+    #inicio a{
+        padding: 10px 20px;
+    }
+
+    #pedido {
+        position: absolute;
+        right: 2%;
+        width: 50%;
+    }
+
+    #pedido a{
+        padding: 10px 20px;
+    }
+
+    #quem {
+        right: 3%;
+        top: 100px;
+        position: absolute;
+        width: 50%;
+    }
+
+    #quem a{
+        padding: 10px 20px;
+    }
+
+    #feedback {
+        left: 26px;
+        top: 100px;
+        position: absolute;
+        width: 50%;
+    }
+
+    #feedback a{
+        padding: 10px 20px;
+    }
+
     .exit.Off~.lista {
         display: flex;
         justify-content: space-between;
@@ -154,7 +197,6 @@
 
     .exit.Off~.lista a {
         color: black;
-        background-color: aqua;
         z-index: 5;
     }
 
