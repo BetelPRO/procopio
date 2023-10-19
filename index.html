@@ -1,281 +1,88 @@
-@charset "UTF-8";
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procopio's Açaí</title>
+    <script src="js/slide.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/sobre.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/navbar.css">
+</head>
+<body>
+    <img class="romano" src="imagens/romano.png" alt="estrutura romana">
+    <div class="back">
+        <header>
+            <div class="navBar">
+                <nav>
+                    <img class="exit" id="exit" src="imagens/esc.png" onclick="exit()" alt="exit menu">
+                    <div class="lista">
+                        <div id="inicio">
+                            <a href="/">Início</a>
+                        </div>
+                        <div id="pedido">
+                            <a href="/">Fazer Pedido</a>
+                        </div>
+                        <div id="feedback">
+                            <a href="/">Feedback</a>
+                        </div>
+                        <div id="quem">
+                            <a href="/">Quem Somos?</a>
+                        </div>
+                    </div>
+                </nav>
+                <div id="menu" onclick="menu()">
+                    <div class='menu'>
+                        <div id="men1"></div>
+                        <div id="men2"></div>
+                        <div id="men3"></div>
+                    </div>
+                </div>
 
-body {
-    margin: 0;
-    background-image: linear-gradient(to bottom, rgba(219, 4, 247, 0.856), rgb(71, 9, 129));
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.romano {
-    position: fixed;
-    opacity: 25%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-}
-
-.imagem {
-    width: 300px;
-    height: 260px;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-}
-
-main {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -55%);
-    width: 70%;
-    height: 95%;
-}
-
-.entradas {
-    position: relative;
-    z-index: 1;
-
-}
-
-.slider {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    border-radius: 20px;
-    width: 640px;
-    height: 380px;
-    box-shadow: 0px 0px 10px;
-    overflow: hidden;
-}
-
-.btn_menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translate(-50%);
-    z-index: 2;
-    gap: 10px;
-    width: 250px;
-    height: 20px;
-}
-
-.btn {
-    background-image: linear-gradient(to bottom, rgba(114, 112, 112, 0.664), rgba(0, 0, 0, 0.664));
-    border: 1px solid white;
-    padding: 3px;
-    border-radius: 5px;
-    width: 40px;
-    height: 10px;
-    cursor: pointer;
-}
-
-.imagem {
-    width: 640px;
-    height: 350px;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    z-index: 1;
-    margin: 0;
-}
-
-.imagem img {
-    width: 650px;
-}
-
-.ativo1~.imagem {
-    margin-left: 0;
-    transition: 1s;
-}
-
-.ativo2~.imagem {
-    margin-left: -640px;
-    transition: 1s;
-}
-
-.ativo3~.imagem {
-    margin-left: -1280px;
-    transition: 1s;
-}
-
-.ativo4~.imagem {
-    margin-left: -1920px;
-    transition: 1s;
-}
-
-.somos {
-    background-color: aliceblue;
-    border: 2px solid rgba(0, 0, 0, 0.705);
-    border-radius: 80px;
-    padding: 1rem;
-    position: absolute;
-    width: 740px;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%, 0%);
-    display: flex;
-    align-items: center;
-    margin: 0px 1rem 1rem 1rem;
-}
-.somos img {
-    width: 120px;
-    margin-right: 1rem;
-}
-.somos p {
-    font-weight: bold;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.somos h2, .somos h1 {
-    display: none;
-}
-
-.navBot{
-    position: absolute;
-    bottom: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 2rem;
-    color: white;
-    background-color: black;
-}
-
-.navBot p { 
-    margin: 0;
-}
-
-.navBar nav p {
-    margin: 0;
-}
-
-@media (max-width:700px) {
-    main {
-        width: 95%;
-    }
-
-    .navBot p { 
-        font-size: 10px;
-    }
-
-    .romano {
-        width: 1000px;
-        opacity: 25%;
-    }
-
-    .btn_menu {
-        bottom: 10px;
-        height: 10px;
-    }
-
-    .btn {
-        height: 8px;
-        background-image: linear-gradient(to bottom, rgba(114, 112, 112, 0.548), rgba(0, 0, 0, 0.479));
-    }
-
-    .slider {
-        width: 320px;
-        height: 200px;
-    }
-
-    .imagem {
-        width: 320px;
-        height: 200px;
-    }
-    .imagem img {
-        width: 320px;
-        height: 240px;
-    }
-
-    .somos {
-        background-color: aliceblue;
-        margin: 0;
-        border: 1px solid rgba(0, 0, 0, 0.705);
-        border-radius: 80px;
-        width: 75%;
-        height: 70px;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%);
-        bottom: 0;
-        display: flex;
-        align-items: center;
-    }
-
-    .somos img {
-        position: absolute;
-        width: 70px;
-        right: 3%;
-        cursor: pointer;
-    }
-
-    .somos #nós {
-        display: none;
-        max-height: 90px;
-        margin: 0;
-
-    }
-
-    .somos h1, .somos h2{
-        display: flex;
-        font-size: 50px;
-        margin-left: 10px;
-    }
-
-    h2 {
-        margin-left: 12px;
-        font-weight: bold;
-        font-size: 32px;
-    }
-
-    .sobre img {
-        position: absolute;
-        width: 85px;
-        left: 3%;
-        transition: 1s;
-        z-index: 5;
-    }
-
-    .sobre h2,.sobre h1 {
-        display: none;
-        transition: 1s;
-    }
-
-    .sobre #nós {
-        display: flex;
-        position: absolute;
-        right: 12px;
-        left: 100px;
-        bottom: 16px;
-        text-align: center;
-        transition: 1s;
-    }
-
-    .ativo1~.imagem {
-        margin-left: 0;
-        transition: 1s;
-    }
-    
-    .ativo2~.imagem {
-        margin-left: -320px;
-        transition: 1s;
-    }
-    
-    .ativo3~.imagem {
-        margin-left: -640px;
-        transition: 1s;
-    }
-    
-    .ativo4~.imagem {
-        margin-left: -960px;
-        transition: 1s;
-    }
-}
+                <div class="logo">
+                    <h3>Procópios Açaí</h3>
+                    <img src="imagens/logo.png" alt="logo Procópio's Açaí">
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="slider">
+                <div class="btn_menu">
+                    <label class="btn" for="slide1"></label>
+                    <label class="btn" for="slide2"></label>
+                    <label class="btn" for="slide3"></label>
+                    <label class="btn" for="slide4"></label>
+                </div>
+                <div class="entradas" onclick="toggleMenu()">
+                    <input type="radio" name="btn_slide" id="slide1">
+                    <input type="radio" name="btn_slide" id="slide2">
+                    <input type="radio" name="btn_slide" id="slide3">
+                    <input type="radio" name="btn_slide" id="slide4">
+                    <div class="imagem">
+                        <img src="imagens/slide1.jpg" alt="slide1">
+                        <img src="imagens/slide2.jpg" alt="slide2">
+                        <img src="imagens/slide3.jpg" alt="slide3">
+                        <img src="imagens/slide4.jpg" alt="slide4">
+                    </div>
+                </div>
+            </div>
+            <div class="somos" id="somos">
+                <h2>Sobre nós</h2>
+                <h1>&#10157</h1>
+                <img id="familia" onclick="sobre()" src="imagens/logo.png" alt="familia">
+                <div id="nós">
+                    <p>"A Procópio's Açaí nasceu da vontade de empreender em unidade e em família."</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+        </footer>
+    </div>
+    <footer class='navBot'>
+        <nav>
+            <p id='copy'>© Copyright 2023 Procópio's Açaí - All Rights Reserved</p>
+        </nav>
+      </footer>
+</body>
+</html>
