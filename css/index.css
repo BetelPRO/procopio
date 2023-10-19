@@ -117,7 +117,10 @@ main {
     border-radius: 80px;
     padding: 1rem;
     position: absolute;
+    width: 740px;
+    left: 50%;
     bottom: 0;
+    transform: translate(-50%, 0%);
     display: flex;
     align-items: center;
     margin: 0px 1rem 1rem 1rem;
@@ -129,6 +132,9 @@ main {
 .somos p {
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.somos h2, .somos h1 {
+    display: none;
 }
 
 .navBot{
@@ -207,7 +213,8 @@ main {
     .somos img {
         position: absolute;
         width: 70px;
-        left: 70%;
+        right: 3%;
+        cursor: pointer;
     }
 
     .somos #nós {
@@ -217,7 +224,8 @@ main {
 
     }
 
-    .somos h1 {
+    .somos h1, .somos h2{
+        display: flex;
         font-size: 50px;
         margin-left: 10px;
     }
