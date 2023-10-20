@@ -1,0 +1,7 @@
+#feedback a {
+    color: orange;
+}
+
+#feedback a:hover {
+    color: white;
+}
