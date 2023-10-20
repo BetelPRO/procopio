@@ -117,7 +117,10 @@ main {
     border-radius: 80px;
     padding: 1rem;
     position: absolute;
+    width: 740px;
+    left: 50%;
     bottom: 0;
+    transform: translate(-50%, 0%);
     display: flex;
     align-items: center;
     margin: 0px 1rem 1rem 1rem;
@@ -129,6 +132,9 @@ main {
 .somos p {
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.somos h4, .somos h2 {
+    display: none;
 }
 
 .navBot{
@@ -207,7 +213,8 @@ main {
     .somos img {
         position: absolute;
         width: 70px;
-        left: 70%;
+        right: 3%;
+        cursor: pointer;
     }
 
     .somos #nós {
@@ -217,15 +224,21 @@ main {
 
     }
 
-    .somos h1 {
-        font-size: 50px;
-        margin-left: 10px;
+    .somos h2{
+        display: flex;
+        font-size: 40px;
     }
 
-    h2 {
+    .somos h4{
+        font-size: 30px;
+        display: flex;
+        margin-left: 10px;
+        margin-right: 2px;
+    }
+
+    h4 {
         margin-left: 12px;
         font-weight: bold;
-        font-size: 32px;
     }
 
     .sobre img {
@@ -236,7 +249,7 @@ main {
         z-index: 5;
     }
 
-    .sobre h2,.sobre h1 {
+    .sobre h2,.sobre h4 {
         display: none;
         transition: 1s;
     }
