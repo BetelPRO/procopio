@@ -151,6 +151,11 @@
 
     #inicio a{
         padding: 10px 20px;
+        color:orange;
+    }
+
+    #inicio a:hover {
+        color: white;
     }
 
     #pedido {
