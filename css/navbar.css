@@ -140,7 +140,7 @@
         display: flex;
         margin-top: 300px;
         border-radius: 0px 20px;
-        transition: 0.5s;
+        transition: all 0.1s;
         background-image: linear-gradient(to right, white, rgba(255, 255, 255, 0.76));
     }
 
@@ -195,7 +195,7 @@
     }
 
     .lista a {
-        transition: 1s;
+        transition:all 1s;
     }
     .lista a:hover {
         text-decoration: underline;
