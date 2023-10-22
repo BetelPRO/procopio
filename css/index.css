@@ -99,6 +99,7 @@ main {
 .ativo1~.btn_menu #btn1 {
     background-image: linear-gradient(to bottom, rgba(212, 211, 211, 0.384), rgba(61, 61, 61, 0.712));
     border: 2px solid #9619f0;
+    height: 11px;
 }
 
 .ativo2~.imagem {
@@ -109,6 +110,7 @@ main {
 .ativo2~.btn_menu #btn2 {
     background-image: linear-gradient(to bottom, rgba(212, 211, 211, 0.384), rgba(61, 61, 61, 0.712));
     border: 2px solid #9619f0;
+    height: 11px;
 }
 
 .ativo3~.imagem {
@@ -119,6 +121,7 @@ main {
 .ativo3~.btn_menu #btn3 {
     background-image: linear-gradient(to bottom, rgba(212, 211, 211, 0.384), rgba(61, 61, 61, 0.712));
     border: 2px solid #9619f0;
+    height: 11px;
 }
 
 .ativo4~.imagem {
@@ -129,6 +132,7 @@ main {
 .ativo4~.btn_menu #btn4 {
     background-image: linear-gradient(to bottom, rgba(212, 211, 211, 0.384), rgba(61, 61, 61, 0.712));
     border: 2px solid #9619f0;
+    height: 11px;
 }
 
 .somos {
