@@ -53,14 +53,14 @@ main {
 }
 
 .btn_menu {
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    position: absolute;
-    bottom: 20px;
+    bottom: -350px;
     left: 50%;
     transform: translate(-50%);
-    z-index: 2;
+    z-index: 5;
     gap: 10px;
     width: 250px;
     height: 20px;
@@ -96,9 +96,19 @@ main {
     transition: 1s;
 }
 
+.ativo1~.btn_menu #btn1 {
+    background-image: linear-gradient(to bottom, rgba(212, 211, 211, 0.384), rgba(61, 61, 61, 0.712));
+    border: 2px solid #9619f0;
+}
+
 .ativo2~.imagem {
     margin-left: -640px;
     transition: 1s;
+}
+
+.ativo2~.btn_menu #btn2 {
+    background-image: linear-gradient(to bottom, rgba(212, 211, 211, 0.384), rgba(61, 61, 61, 0.712));
+    border: 2px solid #9619f0;
 }
 
 .ativo3~.imagem {
@@ -106,9 +116,19 @@ main {
     transition: 1s;
 }
 
+.ativo3~.btn_menu #btn3 {
+    background-image: linear-gradient(to bottom, rgba(212, 211, 211, 0.384), rgba(61, 61, 61, 0.712));
+    border: 2px solid #9619f0;
+}
+
 .ativo4~.imagem {
     margin-left: -1920px;
     transition: 1s;
+}
+
+.ativo4~.btn_menu #btn4 {
+    background-image: linear-gradient(to bottom, rgba(212, 211, 211, 0.384), rgba(61, 61, 61, 0.712));
+    border: 2px solid #9619f0;
 }
 
 .somos {
@@ -172,7 +192,7 @@ main {
     }
 
     .btn_menu {
-        bottom: 10px;
+        bottom: -170px;
         height: 10px;
     }
 
@@ -208,19 +228,22 @@ main {
         bottom: 0;
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
     }
 
     .somos img {
-        position: absolute;
+        display: flex;
         width: 70px;
-        right: 3%;
         cursor: pointer;
+        transition: all 2s;
     }
 
     .somos #nós {
-        display: none;
+        position: absolute;
         max-height: 90px;
         margin: 0;
+        left: 600px;
 
     }
 
@@ -242,10 +265,8 @@ main {
     }
 
     .sobre img {
-        position: absolute;
         width: 85px;
-        left: 3%;
-        transition: 1s;
+        transition: translateX(-200px);
         z-index: 5;
     }
 
@@ -261,7 +282,7 @@ main {
         left: 100px;
         bottom: 16px;
         text-align: center;
-        transition: 1s;
+        transition: all 0.8s;
     }
 
     .ativo1~.imagem {
