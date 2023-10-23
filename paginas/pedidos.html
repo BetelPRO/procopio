@@ -7,6 +7,7 @@
     <script src="../js/slide.js"></script>
     <script src="../js/menu.js"></script>
     <script src="../js/sobre.js"></script>
+    <script src="../js/pedidos.js"></script>
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="pedidos.css">
@@ -54,9 +55,10 @@
                 <label for="_300"><img id="_300ml" src="../imagens/slide2.jpg" alt="300ml"></label>
             </div>
             <form class="pedido" action="">
-                <label for="_400"><input class="ml" type="radio" name="tamanho" id="_400"> 400 ml</label>
-                <label for="_300"><input class="ml" type="radio" name="tamanho" id="_300"> 300 ml</label>
-                <br>
+                <div class="formulario">
+                    <label onclick="select4()" for="_400"><input class="ml" type="radio" name="tamanho" id="_400"> 400 ml</label>
+                    <label onclick="select3()" for="_300"><input class="ml" type="radio" name="tamanho" id="_300"> 300 ml</label>
+                </div>
                 <div class="ingredientes">
                     <label for="leite"><input type="checkbox" name="leite" id="leite"> Leite em Pó</label>
                     <label for="paçoca"><input type="checkbox" name="paçoca" id="paçoca"> Paçoca</label>
