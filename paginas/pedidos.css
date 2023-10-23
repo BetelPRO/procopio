@@ -11,7 +11,7 @@
     width: 300px;
     height: 75%;
     border-radius: 15px;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.897), rgba(129, 126, 126, 0.822));
+    background-image: linear-gradient(to bottom, rgba(34, 33, 33, 0.507), rgba(0, 0, 0, 0.822));
 }
 
 .cardapio img {
@@ -55,6 +55,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: white;
 
 }
 
@@ -67,6 +68,7 @@ input:checked {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    color: white;
 }
 
 .fechar {
