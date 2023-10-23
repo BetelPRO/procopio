@@ -232,15 +232,17 @@ main {
         bottom: 0;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: start;
         overflow: hidden;
     }
 
     .somos img {
+        position: absolute;
+        right: 1%;
         display: flex;
         width: 70px;
         cursor: pointer;
-        transition: all 2s;
+        transition: right 2s;
     }
 
     .somos #nós {
@@ -251,6 +253,13 @@ main {
 
     }
 
+    .sob {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        left: 10%;
+    }
+
     .somos h2{
         display: flex;
         font-size: 40px;
@@ -259,8 +268,6 @@ main {
     .somos h4{
         font-size: 30px;
         display: flex;
-        margin-left: 10px;
-        margin-right: 2px;
     }
 
     h4 {
@@ -270,12 +277,13 @@ main {
 
     .sobre img {
         width: 85px;
-        transition: translateX(-200px);
+        right: 62%;
         z-index: 5;
     }
 
     .sobre h2,.sobre h4 {
-        display: none;
+        position: absolute;
+        font-size: 0px;
         transition: 1s;
     }
 
@@ -286,7 +294,7 @@ main {
         left: 100px;
         bottom: 16px;
         text-align: center;
-        transition: all 0.8s;
+        transition: all 2s;
     }
 
     .ativo1~.imagem {
