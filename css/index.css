@@ -181,6 +181,10 @@ main {
     margin: 0;
 }
 
+.exit {
+    display: none;
+}
+
 @media (max-width:700px) {
     main {
         width: 95%;
@@ -239,6 +243,7 @@ main {
     .somos img {
         position: absolute;
         right: 1%;
+        left: none;
         display: flex;
         width: 70px;
         cursor: pointer;
@@ -277,7 +282,7 @@ main {
 
     .sobre img {
         width: 85px;
-        right: 62%;
+        right: 65%;
         z-index: 5;
     }
 

@@ -48,8 +48,24 @@
                 </div>
             </div>
         </header>
-        <main>
-            
+        <main class="cardapio">
+            <div>
+                <label for="_400"><img id="_400ml" src="../imagens/slide1.jpg" alt="400ml"></label>
+                <label for="_300"><img id="_300ml" src="../imagens/slide2.jpg" alt="300ml"></label>
+            </div>
+            <form class="pedido" action="">
+                <label for="_400"><input class="ml" type="radio" name="tamanho" id="_400"> 400 ml</label>
+                <label for="_300"><input class="ml" type="radio" name="tamanho" id="_300"> 300 ml</label>
+                <br>
+                <div class="ingredientes">
+                    <label for="leite"><input type="checkbox" name="leite" id="leite">Leite em Pó</label>
+                    <label for="paçoca"><input type="checkbox" name="paçoca" id="paçoca">Paçoca</label>
+                    <label for="granola"><input type="checkbox" name="granola" id="granola">Granola</label>
+                    <label for="jujuba"><input type="checkbox" name="jujuba" id="jujuba">Jujuba</label>
+                    <label for="confete"><input type="checkbox" name="confete" id="confete">Confete</label>
+                </div>
+                <button class="fechar" type="submit"> concluir</button>
+            </form>
         </main>
         <footer>
         </footer>
