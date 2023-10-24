@@ -27,7 +27,6 @@
 
 .cardapio #_400ml {
     position: absolute;
-    z-index: 1;
     left: 30%;
     transition: left 0.5s;
 }
@@ -51,12 +50,12 @@
 
 ._400m {
     border: 2px solid #9619f0;
-    z-index: 2;
+    z-index: 3;
 }
 
 ._300m {
     border: 2px solid #9619f0;
-    z-index: 2;
+    z-index: 3;
 }
 
 .formulario label {
@@ -64,8 +63,8 @@
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(to bottom, rgb(255, 0, 234), rgba(205, 50, 252, 0.842),blueviolet, rgba(0, 0, 0, 0.445));
-    width: 64px;
-    height: 20px;
+    width: 68px;
+    height: 25px;
     border: 1px solid white;
     border-radius: 15px;
     cursor: pointer;
@@ -107,4 +106,41 @@
     border: none;
     border-radius: 20px;
     cursor: pointer;
+}
+
+.nav_pag {
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+
+}
+
+#nav_pag {
+    position: absolute;
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    bottom: -30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+button {
+    display: none;
+}
+
+#sub {
+    font-size: xx-large;
+    width: 130px;
+    height: 34px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient( to bottom, #9619f0fb, #6a05b360);
 }
