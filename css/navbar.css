@@ -249,7 +249,7 @@
     }
 }
 
-@media (max-height:450px) {
+@media (max-height:500px) {
 
     .navBar{
         position: fixed;
