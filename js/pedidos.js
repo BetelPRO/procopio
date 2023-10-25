@@ -56,12 +56,12 @@ function con() {
     let pedido = "com ";
 
     if (document.getElementById("_400").checked) {
-        tamanho = "400 ml \n";
+        tamanho = "*400 ml* \n";
         msg_pedido = "Açaí de 400ml\n"
     };
     
     if (document.getElementById("_300").checked) {
-        tamanho = "300 ml \n";
+        tamanho = "*300 ml* \n";
         msg_pedido = "Açaí de 300ml\n"
     };
 
