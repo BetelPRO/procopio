@@ -56,15 +56,15 @@ function con() {
     ingredientes = [];
 
     if (document.getElementById("_400").checked) {
-        pedido = "400 ml \n";
+        pedido = "400 ml com \n";
     };
     
     if (document.getElementById("_300").checked) {
-        pedido = "300 ml \n";
+        pedido = "300 ml com \n";
     };
 
     if(document.getElementById("leite").checked) {
-        pedido = pedido + "Leite \n";
+        pedido = pedido + "*Leite* \n";
     };
     
     if(document.getElementById("paçoca").checked) {
