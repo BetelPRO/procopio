@@ -8,6 +8,14 @@
     <script src="../js/menu.js"></script>
     <script src="../js/sobre.js"></script>
     <script src="../js/pedidos.js"></script>
+    <script>
+        function con() {
+          let mensagem;
+          mensagem = "Olá gostaria de pedir um ";
+    
+          window.open("https://wa.me/+5581986728498?text=" + mensagem);
+        }
+    </script>
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="pedidos.css">
@@ -102,7 +110,7 @@
                 <div>
                     <h2>Total R$: 7,00</h2>
                 </div>
-                <div id="sub">
+                <div onclick="con()" id="sub">
                     <label id="sub" for="btn_sub">Concluir</label>
                 </div>
             </div>
