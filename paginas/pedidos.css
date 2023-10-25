@@ -203,9 +203,9 @@ button {
     }
 
     .cardapio {
-        margin-top: 30px;
+        margin-top: 28px;
         width: 350px;
-        height: 75%;
+        height: 80%;
         border-radius: 15px;
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.74),rgba(41, 41, 41, 0.596));
     }
