@@ -8,6 +8,14 @@
     <script src="../js/menu.js"></script>
     <script src="../js/sobre.js"></script>
     <script src="../js/pedidos.js"></script>
+    <script>
+        function con() {
+          let mensagem;
+          mensagem = "Olá gostaria de pedir um ";
+    
+          window.open("https://wa.me/+5581986728498?text=" + mensagem);
+        }
+    </script>
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="pedidos.css">
@@ -66,7 +74,7 @@
                     <label for="jujuba"><input type="checkbox" name="jujuba" id="jujuba"> Jujuba</label>
                     <label for="confete"><input type="checkbox" name="confete" id="confete"> Confete</label>
                 </div>
-                <button id="btn_sub" type="submit"></button>
+                <button id="btn_sub" type="submit" onclick="con()"></button>
             </form>
         </main>
         <footer class="nav_pag">
