@@ -249,8 +249,54 @@
     }
 }
 
-@media (max-height:500px) {
+@media (max-height: 650px) {
+    .navBar {
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 64px;
+        background-color: black;
+        margin-top: 10px;
+        z-index: 4;
+    }
 
+    .logo img{
+        width: 50px;
+    }
+    .exit{
+        position: fixed;
+        width: 40px;
+        top: 22px;
+        left: 18px;
+        display: none;
+        z-index: 5;
+        cursor: pointer;
+    }
+
+    .menuAtivo {
+        display: flex;
+        margin-top: 263px;
+        border-radius: 0px 20px;
+        transition: all 0.1s;
+        background-image: linear-gradient(to right, white, rgba(255, 255, 255, 0.76));
+    }
+
+    .exit.Off~.lista {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        transition: 1s;
+        width: 100%;
+        font-size: large;
+        margin-top: 60px;
+        z-index: 5;
+    }
+}
+
+@media (max-height:500px) {
     .navBar{
         position: fixed;
         top: 50%;
