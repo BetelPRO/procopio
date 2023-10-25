@@ -202,6 +202,13 @@ button {
         width: 50px;
     }
 
+    .formulario {
+        width: 214px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     .cardapio {
         margin-top: 28px;
         width: 350px;
@@ -213,8 +220,8 @@ button {
     .cardapio img {
         top: 3%;
         position: absolute;
-        width: 115px;
-        height: 135px;
+        width: 100px;
+        height: 120px;
         border-radius: 15px;
         box-shadow: 4px 2px 12px;
         left: 50%;
@@ -222,7 +229,7 @@ button {
     }
 
     .pedido {
-        margin-top: 160px;
+        margin-top: 145px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -231,6 +238,7 @@ button {
     }
 
     .ingredientes {
+        font-size: 13px;
         margin-top: 20px;
         width: 220px;
         display: flex;
