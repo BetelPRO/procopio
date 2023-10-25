@@ -53,14 +53,16 @@ function tree() {
 }
 
 function con() {
-    ingredientes = [];
+    let pedido = "com ";
 
     if (document.getElementById("_400").checked) {
-        pedido = "400 ml com \n";
+        tamanho = "400 ml \n";
+        msg_pedido = "Açaí de 400ml\n"
     };
     
     if (document.getElementById("_300").checked) {
-        pedido = "300 ml com \n";
+        tamanho = "300 ml \n";
+        msg_pedido = "Açaí de 300ml\n"
     };
 
     if(document.getElementById("leite").checked) {
@@ -68,30 +70,32 @@ function con() {
     };
     
     if(document.getElementById("paçoca").checked) {
-        pedido = pedido + "Paçoca \n";
+        pedido = pedido + "*Paçoca* \n";
     };
     
     if(document.getElementById("granola").checked) {
-        pedido = pedido + "Granola \n";
+        pedido = pedido + "*Granola*  \n";
     };
     
     if(document.getElementById("jujuba").checked) {
-        pedido = pedido + "Jujuba \n";
+        pedido = pedido + "*Jujuba*  \n";
     };
     
     if(document.getElementById("confete").checked) {
-        pedido = pedido + "Confete\n";
+        pedido = pedido + "*Confete* \n";
     };
     
     if(document.getElementById("bolinha").checked) {
-        pedido = pedido + "Bolinha\n";
+        pedido = pedido + "*Bolinha* \n";
     };
 
     if (document.getElementById("_400").checked || document.getElementById("_300").checked){
         let mensagem;
-        mensagem = "Olá gostaria de pedir um Açaí de " + pedido;
-        alert(mensagem);
-        window.open("https://wa.me/+5581986728498?text=" + mensagem);
+        mensagem = "Olá gostaria de pedir um Açaí de " + tamanho + pedido;
+        msg_pedido = msg_pedido + pedido
+        if(confirm(msg_pedido) == true) {
+            window.open("https://wa.me/+5581986728498?text=" + mensagem);
+        }
     }
     else {
         alert("Escolha o Tamanho do Açaí")
