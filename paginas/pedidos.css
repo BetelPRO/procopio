@@ -181,5 +181,62 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient( to bottom, #9619f0fb, #6a05b360);
+    background-image: linear-gradient( to bottom, #9619f0fb, #6b05b365);
+}
+
+@media (max-height: 712px) {
+    .navBar {
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        margin-top: 10px;
+        z-index: 4;
+    }
+
+    .logo img{
+        width: 50px;
+    }
+
+    .cardapio img {
+        top: 3%;
+        position: absolute;
+        width: 115px;
+        height: 135px;
+        border-radius: 15px;
+        box-shadow: 4px 2px 12px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .pedido {
+        margin-top: 160px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+    .ingredientes {
+        margin-top: 20px;
+        width: 220px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: white;
+    }
+
+    .one img, .two img,.tree img {
+        position: relative;
+        box-shadow: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        left: 40px;
+    }
 }
